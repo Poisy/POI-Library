@@ -5,6 +5,7 @@ namespace POILibrary
 {
     public class Book
     {
+        public int ID { get; set; }
         public string Title { get; set; }
         public string PagesCont { get; set; }
         public List<string> Authors { get; set; }

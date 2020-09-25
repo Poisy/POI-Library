@@ -6,7 +6,14 @@ namespace POILibrary
     {
         static void Main(string[] args)
         {
-            var books =  LibraryManager.ScrapBooks("bakemonogatari");
+            var test = new Library();
+
+            var books = Library.SearchBookOnline("pod igoto");
+
+            test.AddBook(books[0]);
+            test.AddBook(books[1]);
+
+            test.SaveBooks();
         }
     }
 }
