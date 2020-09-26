@@ -5,8 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LibraryView"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Style="{StaticResource MainWindowStyle}">
+    
+    <Grid Style="{StaticResource MainGridStyle}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="_addButton" Style="{StaticResource AddButtonStyle}"/>
+
+        <Button x:Name="_removeButton" Style="{StaticResource RemoveButtonStyle}"/>
+
+        <ComboBox x:Name="_sortComboBox" Style="{StaticResource SortComboBoxStyle}"/>
+
+        <Grid Style="{StaticResource CenterGridStyle}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="5*"/>
+            </Grid.RowDefinitions>
+
+            <TextBox x:Name="_searchTextBox" Style="{StaticResource SearchTextBoxStyle}" ></TextBox>
+
+            <ListBox x:Name="_libraryListBox" Style="{StaticResource LibraryListBoxStyle}"/>
+        </Grid>
     </Grid>
+    
 </Window>

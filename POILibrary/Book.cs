@@ -12,5 +12,11 @@ namespace POILibrary
         public string YearReleased { get; set; }
         public DateTime YearReaded { get; set; }
         public string Thumbnail { get; set; }
+        public State CurrentState { get; set; }
+
+        public enum State
+        {
+            Finished, Reading, PlanToRead, Unknown
+        }
     }
 }

@@ -94,6 +94,18 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Views\" />
+    <Folder Include="Windows\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Data\Images\default-book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\POILibrary\POILibrary.csproj">
+      <Project>{68ed0f7e-2f0e-4e6c-a125-1fe77c7caa9e}</Project>
+      <Name>POILibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
